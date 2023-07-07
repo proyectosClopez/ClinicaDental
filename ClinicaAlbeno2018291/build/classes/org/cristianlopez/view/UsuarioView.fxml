@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="428.0" prefWidth="663.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.cristianlopez.controller.UsuarioController">
+   <children>
+      <Pane prefHeight="534.0" prefWidth="663.0" style="-fx-background-color: #3483d7;">
+         <children>
+            <ImageView fitHeight="499.0" fitWidth="663.0" layoutX="2.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/2coloresfondo.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="37.0" fitWidth="71.0" layoutX="33.0" layoutY="123.0" opacity="0.27" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/toothbrush_icon_154311.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="37.0" fitWidth="71.0" layoutX="612.0" layoutY="117.0" opacity="0.22" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/dentist_pliers_icon_154322.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="37.0" fitWidth="71.0" layoutX="612.0" layoutY="349.0" opacity="0.21" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/mouth_mirror_and_probes_icon_154316.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="37.0" fitWidth="71.0" layoutX="15.0" layoutY="368.0" opacity="0.27" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/toothbrush_icon_154311.png" />
+               </image>
+            </ImageView>
+            <Circle fill="WHITE" layoutY="405.0" radius="138.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+            <GridPane layoutX="118.0" layoutY="120.0" prefHeight="295.0" prefWidth="432.0">
+               <columnConstraints>
+                  <ColumnConstraints />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="256.0000030517578" minWidth="10.0" prefWidth="177.5999725341797" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="236.8000518798828" minWidth="10.0" prefWidth="230.4000274658203" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="63.600012207031256" minHeight="10.0" prefHeight="57.20001831054688" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="56.79998168945312" minHeight="10.0" prefHeight="52.79998168945312" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="56.79998168945312" minHeight="10.0" prefHeight="52.79998168945312" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="56.79998168945312" minHeight="10.0" prefHeight="52.79998168945312" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="56.79998168945312" minHeight="10.0" prefHeight="52.79998168945312" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label prefHeight="22.0" prefWidth="168.0" text="Codigo Usuario" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtCodigoUsuario" editable="false" prefHeight="26.0" prefWidth="108.0" GridPane.columnIndex="2" />
+                  <TextField fx:id="txtUser" editable="false" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <Label prefHeight="17.0" prefWidth="133.0" text="Usuario:" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="22.0" prefWidth="168.0" text="Nombre Usuario:" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="22.0" prefWidth="172.0" text="Apellido Usuario:" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtNombreUsuario" editable="false" prefWidth="111.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <TextField fx:id="txtApellidoUsuario" editable="false" prefWidth="111.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <Label prefHeight="17.0" prefWidth="133.0" text="Contraseña:" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtContrasena" editable="false" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+               </children>
+            </GridPane>
+            <Circle fill="WHITE" layoutX="688.0" layoutY="104.0" radius="138.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+            <Pane prefHeight="104.0" prefWidth="663.0" style="-fx-background-color: #dcfafa;">
+               <children>
+                  <ImageView fitHeight="81.0" fitWidth="89.0" layoutX="28.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/usuarioLogo.png" />
+                     </image>
+                  </ImageView>
+                  <HBox layoutX="163.0" layoutY="-3.0" prefHeight="110.0" prefWidth="338.0">
+                     <children>
+                        <Button alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#ventanaLogin" prefHeight="107.0" prefWidth="110.0" styleClass="button1" stylesheets="@../resource/ClinicaAlbenoCSS.css" text="Regresar">
+                           <font>
+                              <Font name="Berlin Sans FB Bold" size="18.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="65.0" fitWidth="68.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/regresar.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="btnNuevo" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#nuevo" prefHeight="107.0" prefWidth="110.0" styleClass="button1" stylesheets="@../resource/ClinicaAlbenoCSS.css" text="Nuevo">
+                           <font>
+                              <Font name="Berlin Sans FB Bold" size="18.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fx:id="imgNuevo" fitHeight="65.0" fitWidth="68.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/agregar.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="btnEliminar" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#cancelar" prefHeight="110.0" prefWidth="110.0" styleClass="button1" stylesheets="@../resource/ClinicaAlbenoCSS.css" text="Cancelar">
+                           <font>
+                              <Font name="Berlin Sans FB Bold" size="18.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fx:id="imgEliminar" fitHeight="68.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/Cancelar.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <ImageView fitHeight="91.0" fitWidth="89.0" layoutX="553.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/descarga-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="42.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Usuarios">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
